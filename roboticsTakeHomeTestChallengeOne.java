@@ -40,13 +40,13 @@ public class Robot extends TimedRobot
     @Override
     public void autonomousPeriodic()
     {
-        if (timer.get() < 15.0)
+        if (timer.get() < 10.0)
         {
-            drive.arcadeDrive(0.5, 0);
+            drive.arcadeDrive(0.25, 0);
         }
-        else if (timer.get() < 17.0)
+        else if (timer.get() < 12.0)
         {
-            drive.arcadeDrive(0, 0.5);
+            drive.arcadeDrive(0, 0.25);
         }
         else
         {
@@ -54,3 +54,4 @@ public class Robot extends TimedRobot
         }
     }
 }
+
