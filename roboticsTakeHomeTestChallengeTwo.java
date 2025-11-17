@@ -54,9 +54,6 @@ public class ElevatorAllInOne
         public boolean isFinished() {return false;}
     }
 
-    // -----------------------------
-    // Command: Lower Elevator
-    // -----------------------------
     public static class LowerElevator extends Command
     {
         private final ElevatorSubsystem e;
@@ -109,3 +106,4 @@ public class ElevatorAllInOne
         c.leftBumper().whileTrue(new LowerElevator(e));
     }
 }
+
